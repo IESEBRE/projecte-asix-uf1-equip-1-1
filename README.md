@@ -4,7 +4,7 @@
 + [Daniel García Andrés](https://github.com/dgarcia1mp03) -> A
 + [Andreu Gisbert Bel](https://github.com/agisbertb) -> B
 + [Max Segura](https://github.com/maxsegura) -> C
-### Professor: Santiago Sabater
+### Professor: Santiago Sabaté
 
 
 
