@@ -1,5 +1,5 @@
 # Simulador de converses 
-Persona - Andreu Gisbert\
+Persona - Andreu Gisbert
 
 Animal - Max Segura
 
