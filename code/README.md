@@ -1,3 +1,4 @@
-# Carpeta code
-
-Per crear les carpetes en el/s projecte/s
+# Simulador de converses 
+Persona - Andreu Gisbert
+Animal - Max Segura
+Alien - Daniel García
