@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Animal {
-  public static void main(String[] args) {
+  public static boolean talking() {
 
         System.out.println("Quin tipus d'animal ets?");
         System.out.println("Introduiex un caràcter");
@@ -118,6 +118,6 @@ public class Animal {
 
         }
 
-
+    return true;
     }
 }

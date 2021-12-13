@@ -1,4 +1,3 @@
-package com.iesebre;
 
 import com.iesebre.Alien;
 
@@ -17,16 +16,16 @@ public class Main{
             System.out.println("  - Animal");
             System.out.println("  - Extraterrestre");
             System.out.print("Opció: ");
-            switch (scanner.nextLine()) {
-                case "Persona":
+            switch (scanner.nextInt()) {
+                case 1:
 //                    Person person = new Person();
 //                    finish = person.talking();
                     break;
-                case "Animal":
+                case 2:
 //                    Animal animal = new Animal();
 //                    finish = animal.talking();
                     break;
-                case "Extraterrestre":
+                case 3:
 
                     Alien extraterrestre = new Alien();
                     finish = extraterrestre.talking();
