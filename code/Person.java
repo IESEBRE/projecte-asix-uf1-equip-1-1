@@ -1,14 +1,21 @@
 import java.util.*;
 
 public class Person {
-    void Person(){}
-    boolean talking () {
-        System.out.println("Hola , que tal!");
-    return true;
-    }
-    public static void main(String[] args) {
+
+    public static boolean talking () {
 
         Scanner sc = new Scanner(System.in);
+
+        //variable numero exercici 1
+        int numero;
+        //variable esport exercici 2
+        int num;
+        //variables num exercici 3
+        int num1 = 0;
+        int num2;
+        //Variable juga exercici 5
+        //variable nom exercici 6
+        String nom = " ";
 
         int pregunta=0;
         while (pregunta!=8) {
@@ -23,15 +30,7 @@ public class Person {
             System.out.println("8. Sortir");
             pregunta = sc.nextInt();
 
-            //variable numero exercici 1
-            int numero;
-            //variable esport exercici 2
-            int num;
-            //variables num exercici 3
-            int num1 = 0;
-            int num2;
-            //variable nom exercici 6
-            String nom = "";
+
 
 
             switch (pregunta) {
@@ -45,9 +44,9 @@ public class Person {
                         System.out.println("Dona");
                     } else if (numero % 2 == 0) {
                         System.out.println("Home");
-                        break;
 
                     }
+                    break;
                 case 2:
                     System.out.println("Escriu un número (1..10):");
                     Scanner sc2 = new Scanner(System.in);
@@ -100,8 +99,74 @@ public class Person {
                     System.out.println();
                     break;
                 case 5:
+                    System.out.println("Tria!   1. Pedra");
+                    System.out.println("        2. Paper");
+                    System.out.println("        3. Tisora");
+                    Scanner entrada = new Scanner(System.in);
+                    List<String> joc = Arrays.asList("Pedra", "Paper", "Tisora");
+                    Random rand = new Random();
+                    int usuari, videsJugador = 5, videsOrd = 5;
+                    String eleUsu;
+                    boolean jugant = true;
+                    while (jugant) {
+                        usuari = entrada.nextInt();
+                        var ordinador = Math.random();
+                        String tord, eleRand;
+                        if (ordinador <0.34){
+                            eleRand = "Pedra";
+                        }else if (ordinador <= 0.67){
+                            eleRand = "Paper";
+                        }else{
+                            eleRand= "Tisora";
+                        }
 
+                        eleUsu = joc.get(usuari - 1) ;
 
+                        if (eleUsu == eleRand) {
+                            System.out.print(eleRand + " - Empat ");
+                            System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                        } else {
+                            if (eleUsu == "Pedra") {
+                                if (eleRand == "Tisora") {
+                                    System.out.print("Tisora - Has guanyat ");
+                                    videsOrd -= 1;
+                                    System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                                } else {
+                                    System.out.println("Paper - Has perdut ");
+                                    videsJugador -= 1;
+                                    System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                                }
+                            }
+                            if (eleUsu == "Paper") {
+                                if (eleRand == "Pedra") {
+                                    System.out.print("Pedra - Has guanyat ");
+                                    videsOrd -= 1;
+                                    System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                                } else {
+                                    System.out.println("Tisora - Has perdut ");
+                                    videsJugador -= 1;
+                                    System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                                }
+                            }
+                            if (eleUsu == "Tisora") {
+                                if (eleRand == "Paper") {
+                                    System.out.print("Paper - Has guanyat ");
+                                    videsOrd -= 1;
+                                    System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                                } else {
+                                    System.out.print("Pedra - Has perdut ");
+                                    videsJugador -= 1;
+                                    System.out.println("("+videsJugador +" - " + videsOrd+ ")");
+                                }
+                            }
+                        }
+                        if (videsJugador == 0){
+                            jugant = false;
+                        }else if(videsOrd== 0){
+                            jugant = false;
+                        }
+
+                    }
                     break;
 
                 case 6:
@@ -113,8 +178,9 @@ public class Person {
 
                 case 7:
 
-                    System.out.println("Hem dic" + nom + "i he nascut. El meu esport favorit és"+". El meu número favorit és el"+
-                    "Juga se'm dona bé però he de reconèixer que has guanyat de forma triunfal ets molt bo!");
+                    System.out.println("Hem dic " +nom+ " i he nascut. El meu esport favorit és" + ". El meu número favorit és el" +
+                            "Juga se'm dona bé però he de reconèixer que has guanyat de forma triunfal ets molt bo!");
+                    break;
 
                 case 8:
                     System.out.println("Adéu!");
@@ -122,5 +188,6 @@ public class Person {
 
             }
         }
+        return true;
     }
 }
