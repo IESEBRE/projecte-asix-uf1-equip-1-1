@@ -59,7 +59,7 @@ public class Alien{
 
                     System.out.println(n + " " + m);
                     tipus = s;
-                    System.out.println("\n");
+                    System.out.print("\n");
                     joel[0] = true;
                     break;
 
@@ -83,7 +83,7 @@ public class Alien{
                         else if (ntransport > 0.9 && ntransport <= 1) transport = "Levitant";
                         System.out.println(transport);
                         vehicle = transport;
-                        System.out.println("\n");
+                        System.out.print("\n");
                         joel[0]=false;
                         joel[1] = true;
                         break;
@@ -128,21 +128,23 @@ public class Alien{
 
                         float a = sc.nextFloat();
                         float b = sc.nextFloat();
-                        while (a<=b) {
-                            float tempb = b;
+                        float tempb = b;
+                        float tempa = a;
+                        while (tempa<=b) {
+                            tempb = b;
 
                             while (a<=tempb){
-                                float op = (a+tempb)/2;
+                                float op = (tempa+tempb)/2;
                                 if (op%1==0.5){
                                     System.out.print(op + "\t");
                                 }
                                 tempb-=1;
                             }
-                            a+=1;
-                            System.out.println("\n");
+                            tempa+=1;
+                            System.out.print("\n");
                         }
 
-                        System.out.println("\n");
+                        System.out.print("\n");
                         joel[2]=false;
                         joel[3] = true;
                         break;
@@ -156,6 +158,7 @@ public class Alien{
                 case 5:
                     if (joel[3]){
                         if (mode==0){
+                            System.out.println("No pots jugar en mode JOEL!!");
                             joel[4] = true;
                             break;
                         }
@@ -192,7 +195,7 @@ public class Alien{
 
                         }
                         jugat = true;
-                        System.out.println("\n");
+                        System.out.print("\n");
                         joel[3]=false;
                         joel[4] = true;
                         break;
@@ -204,7 +207,7 @@ public class Alien{
 
 
                 case 6:
-                    if (mode==1 && joel[4]){
+                    if (joel[4]){
                         if (mode==1){
                             System.out.println("Posam un nom moloon");
                         }
@@ -237,7 +240,7 @@ public class Alien{
                                 System.out.println("Jugar se'm dona bé, però la veritat es que ets dolentíssim, mai en la meva vida havia jugat contra algú tan dolent");
                             }
                         }
-                        System.out.println("\n");
+                        System.out.print("\n");
                         joel[5]=false;
                         break;
                     }else{
@@ -251,7 +254,7 @@ public class Alien{
 
             try {
 
-                Thread.sleep(2 * 1000);
+                Thread.sleep(1000);
             }
             catch (Exception e) {
                 System.out.println(e);

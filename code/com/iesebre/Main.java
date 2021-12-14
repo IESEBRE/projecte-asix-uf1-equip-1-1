@@ -1,3 +1,4 @@
+package com.iesebre;
 
 import com.iesebre.Alien;
 
