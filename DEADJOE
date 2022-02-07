@@ -1,0 +1,20 @@
+
+*** These modified files were found in JOE when it aborted on Mon Dec 13 17:33:37 2021
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+/home/alumne/Documentos/github/projecte-asix-uf1-equip-1-1/.git/MERGE_MSG
+
+*** File '/home/alumne/Documentos/github/projecte-asix-uf1-equip-1-1/.git/MERGE_MSG'
+Alien branch 'master' of github.com:IESEBRE/projecte-asix-uf1-equip-1-1
+# Por favor ingrese un mensaje de commit que explique por qué es necesaria esta fusión,
+# especialmente si esto fusiona un upstream actualizado en una rama de tópico.
+#
+# Líneas comenzando con '#' serán ignoradas, y un mensaje vacío aborta
+#  el commit.
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
